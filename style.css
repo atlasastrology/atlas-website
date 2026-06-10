@@ -1,0 +1,134 @@
+:root {
+  --bg: #26292d;
+  --bg-elev: #2e3237;
+  --text: #f2f3f5;
+  --muted: #a8adb4;
+  --line: #3a3f45;
+  --accent: #8ab4ff;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+a { color: var(--accent); }
+
+/* ---------- Landing ---------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.hero img.icon {
+  width: 132px;
+  height: 132px;
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+
+.hero h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 28px 0 8px;
+  letter-spacing: 0.5px;
+}
+
+.hero p.tagline {
+  color: var(--muted);
+  max-width: 440px;
+  margin: 0 0 36px;
+  font-size: 18px;
+}
+
+.appstore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.appstore-btn:hover { transform: translateY(-1px); opacity: 0.92; }
+.appstore-btn svg { width: 26px; height: 26px; }
+.appstore-btn .small { display: block; font-size: 11px; font-weight: 500; line-height: 1; opacity: 0.7; }
+.appstore-btn .big { display: block; font-size: 19px; font-weight: 700; line-height: 1.15; }
+
+.hero .legal-links {
+  margin-top: 44px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.hero .legal-links a { margin: 0 12px; }
+
+/* ---------- Legal pages ---------- */
+.doc {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+}
+
+.doc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.doc-nav a.home {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+.doc-nav a.home img { width: 28px; height: 28px; border-radius: 7px; }
+.doc-nav .other { font-size: 15px; }
+
+.doc h1 { font-size: 28px; margin: 8px 0 4px; }
+.doc h2 { font-size: 21px; margin: 36px 0 10px; padding-top: 8px; }
+.doc h3 { font-size: 18px; margin: 24px 0 8px; color: var(--text); }
+.doc p { margin: 12px 0; }
+.doc ul { margin: 12px 0; padding-left: 22px; }
+.doc li { margin: 6px 0; }
+.doc hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+.doc blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  background: var(--bg-elev);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  color: var(--muted);
+}
+.doc blockquote strong { color: var(--text); }
+.doc .updated { color: var(--muted); font-size: 15px; margin-top: 0; }
+
+.footer {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+.footer a { color: var(--muted); margin: 0 10px; }
